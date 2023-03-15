@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Basti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="templates/script-template.js"></script>
+    <script src="rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-rezept.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+
+</head>
+
+<body onload="includeHTML()">
+
+<div w3-include-html="templates/header.html"></div>                     <!--header-->
+
+
+<div class="seitenabstand-rechts-links"> 
+
+    <h2 class="rezept-top-text">Spaghetti Bolognese</h2>
+
+    <img class="rezept-img" src="img/rezeptbild-basti.jpg" alt=""> 
+
+    <div class="rezept-icons">                                          <!--Icon Menü-->
+
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            1 Stunde
+        </div>
+
+        <div class="icon-container">
+            <img src="img/icons/brain-solid.svg" alt="">
+            simple
+        </div>
+
+        <div class="icon-container">
+            <img src="img/icons/calendar-alt-regular.svg" alt="">
+            08.10.2022
+        </div>
+
+    </div>
+
+
+    <div class="zutaten_hinzufuegen">
+
+        <p>Zutaten für:</p>
+
+        <input id="swert" min="1" type="number" value="2">              <!--Input Berechnung der Portionen-->
+
+        <button onclick="sportion()">Berechnen</button>                 <!--Button-->
+
+    </div>
+
+
+    <h4>Zutaten für <p id="snumber">2</p> Personen</h4>                 <!--Anzahl der Personen wird angezeigt-->
+                                                                        <!--Zutatenliste-->
+            <ul>
+                <li>
+                    <span id="szeile1">1</span><p>Zwiebel</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile2">1</span><p>Knoblauchzehe</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile3">1</span><p>Möhre(n)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile4">150</span><p>g Rinderhackfleisch (oder Tatar)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile6">100</span><p>ml Gemüsebrühe</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile7">34</span><p>g Tomartenmark</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile8">1</span><p>TL Oregano</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile9">200</span><p>g Tomaten, stückig (mit Kräutern)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile10">1</span><p>EL Tomatenketchup</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="szeile11">250</span><p>g Spaghetti</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p>Salz und Pfeffer</p>
+                </li>
+            </ul>
+
+        <h4>Zubereitung</h4>
+
+
+        <div class="rezept-icons">                                             <!--Icon Menü-->
+
+            <div class="icon-container ">
+
+                <img src="img/icons/clock-regular.svg" alt="">
+                Arbeitszeit 20 Min 
+
+            </div>
+
+
+            <div class="icon-container">
+
+                <img src="img/icons/clock-regular.svg" alt="">
+                Koch-/Backzeit 40 Min
+
+            </div>
+
+
+            <div class="icon-container">
+
+                <img src="img/icons/clock-regular.svg" alt="">
+                Gesamtzeit 1 Stunde
+
+            </div>
+
+        </div>
+
+    <div class="rezept-beschreibung">
+
+        Zwiebel, Knoblauch und Möhre schälen und in feine Würfel schneiden.<br><br>
+        Hackfleisch in die Pfanne geben, langsam erhitzen und im eigenen Fett unter Rühren anbraten. Salzen und pfeffern.<br>
+        Zwiebeln, Knoblauch und Möhren dazugeben und kurz mitbraten. Mit der Brühe ablöschen.<br>
+        Dann Tomatenmark, Oregano, die stückigen Tomaten und Tomatenketchup unterrühren.<br>
+        Etwa 40 Minuten einkochen lassen.<br><br>
+        Spaghetti in Salzwasser bissfest kochen.<br>
+        Durch ein Sieb abgießen, mit kaltem Wasser abschrecken und zusammen mit der Sauce servieren.
+
+    </div>
+
+
+    <div class="rezept-ersteller">
+
+        <h3>Rezept erstellt von:</h3>
+
+        <div class="rezept-ersteller-impressum">
+
+            <img src="img/basti.jpg" alt="">
+            <b>Basti</b>
+
+        </div>
+
+    </div>
+
+</div>
+
+<div w3-include-html="templates/footer.html"></div>                         <!--footer-->
+
+</body>
+</html>

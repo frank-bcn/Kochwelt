@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <script src="templates/script-template.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="includeHTML()">
+
+    <div w3-include-html="templates/header.html"></div>                 <!--header-->
+
+<div class="form-top">
+
+    <span>CONTACT US</span>
+
+    <div class="formular">                                              <!--Kontaktformular-->
+
+        <img src="img/kochmutze64px.png" alt="K.LOGO">
+
+        <form action="https://gruppe-332.developerakademie.net/Kochwelt/send_mail.php" method="post">
+
+            <input name="name" type="text" placeholder="Dein Name" maxlength="32">
+
+            <textarea name="message" rows="7" placeholder="Deine Nachricht an uns..."></textarea>
+            
+            <button type="submit">Senden</button>                           <!--Button-->
+
+        </form>
+
+    </div>
+
+</div>
+
+<div w3-include-html="templates/footer.html"></div>                     <!--footer-->
+
+</body>
+</html>

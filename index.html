@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochwelt</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="templates/script-template.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+</head>
+
+<body onload="includeHTML()">
+
+    <div class="background">
+
+    <div w3-include-html="templates/header.html"></div>    
+
+    <div class="tagesrezept seitenabstand-rechts-links">
+
+
+        <div class="tagesrezept-cover">
+
+            <img src="img/croissant.jpg" alt="">
+
+        </div>
+
+
+        <div class="tagesrezept-beschreibung">
+
+            <div class="tagesrezept-titel">
+                <h2>Französische Croissants</h2>
+            </div>
+
+            <div class="tagesrezept-text">
+                <p>Der Blätterteig wurde Mitte des 17. Jahrhunderts erstmals im ersten Basiswerk der französischen Süssgebäcke von François Pierre de la Varenne genannt. Von da an wurde der Blätterteig, ein Vorreiter des Croissants, ein Grundelement der französischen Pâtisserie</p>
+                    
+                <a href="rezept-croissants.html"><button>Rezept öffnen</button></a>         <!--Button-->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="background-litegrey text-mittig">
+
+        <h2>Lust auf was Neues?</h2>                                                        <!--headline Rezeptbücher-->
+
+    </div>
+
+    <div class="rezepte-all text-mittig background-litegrey seitenabstand-rechts-links">    <!--Rezeptbücher werden geladen-->
+        
+        <div>
+            <div w3-include-html="templates/rezeptbook-basti&frank.html"></div>                  <!---->
+        </div>
+        <div>
+            <div w3-include-html="templates/rezeptbook-basti.html"></div>                   <!---->
+        </div>
+        <div>
+            <div w3-include-html="templates/rezeptbook-frank.html"></div>                   <!---->
+        </div>
+
+    </div>
+
+    <div class="text-mittig">
+
+        <h2>Pfanne vs. Wok - Was ist besser?</h2>
+
+    </div>
+
+
+    <div class="pfanne seitenabstand-rechts-links">
+
+        <div>
+            <p>Durch die hohen Seitenwände der Wokpfanne wird die Hitze in der Mitte konzentriert, während die Seitenwände kühler bleiben. So kannst Du die Temperatur der verschiedenen Zutaten beeinflussen: Die Zutaten, die viel Hitze brauchen, bewegst Du beim Rühren ins Zentrum der Pfanne.</p>
+        </div>
+
+        <div>
+            <img src="img/wok.jpg" alt="">
+        </div>
+
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>                                     <!--footer wird geladen-->
+
+   </div>
+</body>
+</html>

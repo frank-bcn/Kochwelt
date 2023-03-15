@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept von Basti & Frank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="templates/script-template.js"></script>
+    <script src="rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-rezept.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+
+
+</head>
+<body onload="includeHTML()">
+<div w3-include-html="templates/header.html"></div>
+<div class="seitenabstand-rechts-links"> <!--rezept-magin classe geändert (aus index.css)-->
+    <h2 class="rezept-top-text">Berkiner Currywurst</h2>
+    <img class="rezept-img" src="img/currywurst.jpg" alt=""> <!--classe rezept-img eingefügt-->
+    <div class="rezept-icons">
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            15min
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/brain-solid.svg" alt="">
+            simple
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/calendar-alt-regular.svg" alt="">
+            30.09.2022
+        </div>
+    </div>
+    <div class="zutaten_hinzufuegen">
+        <p>Zutaten für</p>
+        <input id="mwert" type="number" min="1" value="1">
+        <button onclick="mportion()">Berechnen</button>
+    </div>
+    <h4>Zutaten für <p id="mnumber">1</p> Personen</h4>
+
+            <ul>
+                <li>
+                    <span id="mzeile1">1</span><p>Saltgurke(n)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile2">2</span><p>Paprikaschot(n), rot und grün</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile3">500</span><p>g Tomate(n)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile4">2</span><p>Zwiebel(n)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile5">200</span><p>g Schafskäse</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile6">1</span><p>Glas Oliven (klein)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile7">1</span><p>Zitrone(n)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="mzeile8">125</span><p>ml Olivenöl</p>
+                </li>
+            </ul>
+            <ul>
+                <li><p>Salz und Pfeffer</p></li>
+            </ul>
+            <ul>
+                <li><p>Oregano</p></li>
+            </ul>
+    <h4>Zubereitung</h4>
+    <div class="rezept-icons">
+        <div class="icon-container ">
+            <img src="img/icons/clock-regular.svg" alt="">
+            15min 
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            Gesamtzeit 25min 
+        </div>
+    </div>
+    <div class="rezept-beschreibung">
+        Gurke waschen und ungeschält in dünne Scheiben oder Stücke schneiden. Paprika waschen, entkernen und in dünne Streifen
+        schneiden. Tomaten waschen und achteln. Zwiebeln schälen und in feine Ringe schneiden. Schafskäse würfeln und mit Oregano
+        bestreuen. Oliven abgießen und mit Gurke, Paprika, Tomaten, Zwiebeln und Schafskäse in eine Schüssel geben. Olivenöl,
+        Zitronensaft, Salz und Pfeffer zu einer Sauce verrühren und Über den Salat gießen.
+    </div>
+
+    <div class="rezept-ersteller">
+        <h3>Rezept erstellt von:</h3>
+        <div class="rezept-ersteller-impressum">
+            <img src="img/profile.png" alt="">
+            <b>Mehmet</b>
+        </div>
+    </div>
+</div>
+
+<div w3-include-html="templates/footer.html"></div>    
+
+</body>
+</html>

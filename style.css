@@ -1,0 +1,429 @@
+header{
+    height: 7%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 8px;
+    box-shadow: 0 5px 10px lightgray;
+    background-color: white;
+
+}
+
+.seitenabstand-rechts-links{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+input {
+    border-radius: 10px;
+    padding: 10px;
+    border-color: lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0,0.2 )
+}
+
+header img{
+    height: 50px;
+    padding-top: 9px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+nav a{
+    color: black;
+    text-decoration: underline 4px transparent;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+nav a:hover{
+    text-decoration: underline 4px green;
+    color: green;
+    background-color: white !important;
+}
+
+.nav-link{
+    background-color: transparent;
+}
+
+body{
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+p{
+    margin: 16;
+}
+
+h2{
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.text-mittig{
+    text-align: center;
+}
+
+.background-litegrey{
+    background-color: rgba(0, 0, 0,0.2 );
+}
+
+.tagesrezept{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.tagesrezept-cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tagesrezept-cover img{
+    height: 150px;
+    margin-right: 32px;
+}
+
+.tagesrezept-beschreibung{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+button{
+    background-color: rgb(124, 110, 30);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: unset;
+}
+
+button:hover{
+    background-color: rgb(22, 78, 50);
+}
+
+.rezepte-all{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 32px;
+}
+
+.rezepte-all img{
+    height: 140px;
+    width: 130px;
+}
+
+.pfanne{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 32px;
+}
+
+.pfanne img{
+    height: 200px;
+    width: 300px;
+    margin-left: 64px;
+}
+
+footer{
+    min-height: 200px;
+    background-color: rgb(64,59,59);
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+    color: black;
+    justify-content: space-between;
+}
+
+footer img{
+    height: 60px ;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    filter: invert();
+}
+
+.footer-imp-dat{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 32px;
+}
+
+.footer-imp-dat a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-imp-dat a:hover{
+    font-weight: bold;
+}
+
+nav {
+	width: 100%;
+	background-color: white;
+}
+
+nav ul{
+	list-style: none;
+	float: left;
+	width: 100%;
+    background-color: white !important;
+}
+
+nav ul li{
+	float: left;
+	padding: 5px 30px;
+	text-align: center;
+}
+
+#navigation {
+	opacity: 0;
+}
+
+#navigation:checked ~ ul {
+	display: block;
+}
+
+#navigation:checked ~ label .burgericon {
+	margin-top: 15px;
+}
+
+#navigation:checked ~ label .burgericon div:first-of-type{
+	rotate: 45deg;
+}
+
+#navigation:checked ~ label .burgericon div:last-child{
+	rotate: -45deg;
+	margin-top: -10px;
+}
+
+#navigation:checked ~ label .burgericon div:nth-child(2){
+	display: none;
+}
+
+.nav-link {
+    text-align: end;
+}
+
+
+@media (max-width: 1050px){
+
+.seitenabstand-rechts-links{
+    padding-left: 150px;
+    padding-right: 150px; 
+}
+
+header{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+footer{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+}
+
+
+@media (max-width: 950px){
+.seitenabstand-rechts-links{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+footer{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+}
+
+
+@media (max-width: 850px){
+.seitenabstand-rechts-links{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+header{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+}
+
+
+@media (max-width:655px){
+.tagesrezept{
+    flex-direction: column;
+    text-align: center;
+}
+
+.tagesrezept-cover img{
+    margin: 0;
+}
+
+.rezepte-all{
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.pfanne{
+    flex-direction: column;
+    text-align: center;
+}
+
+.pfanne img{
+    margin: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: white;
+}
+
+nav ul{
+    list-style: none;
+    float: left;
+    width: 100%;
+}
+
+nav ul li{
+    float: left;
+    padding: 5px 30px;
+    text-align: center;
+}
+    
+nav ul li{
+    width: 100%;
+    padding: 15px 0px;
+}
+
+nav ul {
+    display: none;
+}
+
+.burgericon {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.burgericon div {
+    width: 90%;
+    margin: 7px 5%;
+    height: 3px;
+    background-color: black;
+}
+
+.burgericon {
+    display: block;
+}
+
+#navigation {
+    opacity: 0;
+}
+
+#navigation:checked ~ ul {
+    display: block;
+}
+
+#navigation:checked ~ label .burgericon {
+    margin-top: 15px;
+}
+
+#navigation:checked ~ label .burgericon div:first-of-type{
+    rotate: 45deg;
+}
+
+#navigation:checked ~ label .burgericon div:last-child{
+    rotate: -45deg;
+    margin-top: -10px;
+}
+
+#navigation:checked ~ label .burgericon div:nth-child(2){
+    display: none;
+}
+
+footer{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+    padding-bottom: 16px;
+}
+
+.footer-imp-dat{
+    align-items: center;
+}
+
+}
+
+
+  @media (max-width: 450px){
+.seitenabstand-rechts-links{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+header{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+footer{
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    .pfanne img{
+        height: 100px;
+        width: 150px;
+    }
+}

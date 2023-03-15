@@ -1,0 +1,17 @@
+h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.seitenabstand-rechts-links{
+    height: 100vh;              /* 100hv; damit der footer unter dem Bildschirm startet */
+}

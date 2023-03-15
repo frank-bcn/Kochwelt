@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Frank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="templates/script-template.js"></script>
+    <script src="rezept.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-rezept.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+
+
+</head>
+<body onload="includeHTML()">
+<div w3-include-html="templates/header.html"></div>
+<div class="seitenabstand-rechts-links"> <!--rezept-magin classe geändert (aus index.css)-->
+    <h2 class="rezept-top-text">Knusprige Baguettes</h2>
+    <img class="rezept-img" src="img/rezept-bild-frank.jpg" alt=""> <!--classe rezept-img eingefügt-->
+    <div class="rezept-icons">
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            40min
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/brain-solid.svg" alt="">
+            simple
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/calendar-alt-regular.svg" alt="">
+            06.10.2022
+        </div>
+    </div>
+    <div class="zutaten_hinzufuegen">
+        <p>Zutaten für</p>
+        <input id="fwert" type="number" min="1" value="3">
+        <button onclick="fportion()">Berechnen</button>
+    </div>
+    <h4>Zutaten für <p id="fnumber">3</p> Baguettes</h4>
+            <ul>
+                <li>
+                    <span id="fzeile1">670</span><p>g Mehl</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="fzeile2">1,5</span><p>TL Salz</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="fzeile3">25</span><p>g Hefe</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="fzeile4">1</span><p>TL Zucker</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="fzeile5">400</span><p>ml lauwarmes Wasser</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="fzeile6">50</span><p>ml Salzwasser</p>
+                </li>
+            </ul>
+    <h4>Zubereitung</h4>
+    <div class="rezept-icons">
+        <div class="icon-container ">
+            <img src="img/icons/clock-regular.svg" alt="">
+            25min 
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            Gesamtzeit 40min 
+        </div>
+    </div>
+    <div class="rezept-beschreibung">
+        In einer Schuessel Mehl mit dem Salzwaser vermischen,eine grosse Kule eindruecken und dortdie Hefe Stueck fuer Stueck hinzufuegen.<br>
+        Anschliesend den Zucker in die Kuhle geben und mit 50ml Wasser angiesen.<br>
+        Die Hefe in der Kuhle vorsichtig umruehren bis sie sich im Wasser gut aufgeloest hat.<br>
+        Das Ganze abdecken, zum Beispiel mit einem Kuechentuc h und 30 Minuten gehen lassen.<br>
+        Den Rest des lauwarmen Wassers hinzufuegen und alles gruendlich zu einem Teig verkneten<br>
+        Anschliesend den Teig in 3 gleiche Teile portionieren und duenn zu Rechtecken ausrollen.<br>
+        Anschliesend einrollen und so formen bis ein Baguette entsteht.<br>
+        Nun auf ein Backblech geben und eine halbe Std in in Ruhe lassen.<br>
+        Waehrenddessen den Back-Ofen auf 220 Grad vorheizen.<br>
+        Baguettes mit Sakzwasser bestreichen und zusammen mit einer Schale voll mit Wasser in den Backofen schieben.<br>
+        Rund 25 Minuten backen bis sie eine geldbraune Farbe haben.
+
+    </div>
+
+    <div class="rezept-ersteller">
+        <h3>Rezept erstellt von:</h3>
+        <div class="rezept-ersteller-impressum">
+            <img src="img/frank.jpg" alt="">
+            <b>Frank</b>
+        </div>
+    </div>
+</div>
+
+<div w3-include-html="templates/footer.html"></div>    
+
+</body>
+</html>

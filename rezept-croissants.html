@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept Croissants</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script src="rezept.js"></script>
+    <script src="templates/script-template.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-rezept.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" type="image/x-icon" href="img/kochmutze.png">
+
+
+</head>
+<body onload="includeHTML()">
+<div w3-include-html="templates/header.html"></div>
+<div class="seitenabstand-rechts-links">
+    <h2 class="rezept-top-text">Französische Croissants</h2>
+    <img class="rezept-img" src="img/croissant.jpg" alt="">
+    <div class="rezept-icons">
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            15min
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/brain-solid.svg" alt="">
+            simple
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/calendar-alt-regular.svg" alt="">
+            30.09.2022
+        </div>
+    </div>
+        <div class="zutaten_hinzufuegen">
+            <p>Zutaten für:</p>
+            <input id="cwert" min="1" type="number" value="1" >
+            <button onclick="cportion()">Berechnen</button>
+        </div>
+        <h4>Zutaten für <p id="cnumber">1</p> Personen</h4>
+    <div class="zutatenListe">
+            <ul>
+                <li>
+                    <span id="czeile1">500</span><p>g Weizenmehl</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile2">1</span><p>Pck. Dr. Oetker Trockenbackhefe</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile3">40</span><p>g Zucker</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile4">2</span><p>TL Salz</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile5">40</span><p>g weiche Butter</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile6">250</span><p>ml Milch</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile7">1</span><p>Ei (Größe M)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile8">1</span><p>Eiweiß (Größe M)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile9">250</span><p>g kalte Butter</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <p><b>Zum Bestreichen:</b></p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile10">1</span><p>Eigelb (Größe M)</p>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <span id="czeile11">1</span><p>EL Milch</p>
+                </li>
+            </ul>
+    </div>
+    <h4>Zubereitung</h4>
+    <div class="rezept-icons">
+        <div class="icon-container ">
+            <img src="img/icons/clock-regular.svg" alt="">
+            15min 
+        </div>
+        <div class="icon-container">
+            <img src="img/icons/clock-regular.svg" alt="">
+            Backzeit-20min
+        </div>
+    </div>
+    <div class="rezept-beschreibung">
+        <p><br><b>Wie backe ich leckere Croissants?</b><br><br>
+        1<br>
+        Hefeteig zubereiten
+        Mehl mit Hefe in einer Rührschüssel sorgfältig vermischen. Übrige Zutaten - bis auf die kalte Butter- hinzufügen und alles mit einem Mixer (Knethaken) kurz auf niedrigster Stufe verrühren, dann auf höchster Stufe in etwa 5 Min. zu einem glatten Teig verarbeiten.
+        <br><br>
+        2<br>
+        Teig und Butter zum Tourieren vorbereiten
+        Teig auf leicht bemehlter Arbeitsfläche noch einmal kurz durchkneten. Den Teig zu einem Rechteck (40 x 25 cm) ausrollen. Die kalte Butter in Scheiben schneiden und eine Hälfte der Teigplatte (20 x 25 cm) damit belegen, dabei rundherum am Rand etwa ½ cm frei lassen. Die andere Teighälfte darüber klappen und an den Rändern andrücken. 
+        <br><br>
+        3<br>
+        Plunderteig tourieren
+        Die Platte wieder zu einem Rechteck (40 x 25 cm) ausrollen. Von den kürzeren Seiten so zur Mitte klappen, dass die Teigkanten aneinanderstoßen, dann die beiden Seiten zusammenklappen; es entstehen 4 Teiglagen. Den Teig zugedeckt 15 Min. in den Kühlschrank legen.
+        <br><br>
+        4<br>
+        Teigpaket mit der langen Seite an die Kante der Arbeitsfläche legen und wie oben beschrieben ein weiteres Mal ausrollen, übereinander schlagen und nochmals 15 Min. zugedeckt kalt stellen. Inzwischen das Backblech mit Backpapier belegen und den Backofen vorheizen.
+        <br><br>
+        Ober-/Unterhitze etwa 200 °C
+        <br>
+        Heißluft etwa 180 °C
+        <br><br>
+        5<br>
+        Croissants formen und backen
+        Teig zu einem Rechteck (50 x 32 cm) ausrollen und so halbieren, dass 2 Teigstreifen von 50 x 16 cm entstehen. Jeden Teigstreifen mit Hilfe eines Lineals und eines Messers in 8 Dreiecke (etwa 16 x 12 cm) schneiden. Dreiecke von der breiten Seite her aufrollen und zu einem "Hörnchen" biegen. Croissants mit etwas Abstand auf das Backblech legen und nochmals zugedeckt gehen lassen, bis sie sich sichtbar vergrößert haben. Eigelb mit Milch verrühren, die Croissants damit bestreichen und backen.
+        </p>
+    </div>
+
+    <div class="rezept-ersteller">
+        <h3>Rezept erstellt von:</h3>
+        <div class="rezept-ersteller-impressum">
+            <img src="img/kochmutze64px.png" alt="">
+            <b>Kochwelt (Junus)</b>
+        </div>
+    </div>
+    
+</div>
+<div w3-include-html="templates/footer.html"></div>    
+</body>
+</html>

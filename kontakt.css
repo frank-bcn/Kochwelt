@@ -1,0 +1,74 @@
+body{
+    background-image: url("img/pexels-pixabay-326268.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.form-top{                                                      /* Formular oben*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h2{
+    position: relative;
+    top: 200px;
+    color: white;
+
+}
+span{
+    font-size: 100px;
+
+}
+.form-top img{                                                  /* Formular img */
+    height: 50px;
+    object-fit: cover;
+    padding-bottom: 64px;
+}
+
+.formular{
+    height: 450px;
+    /* width: 600px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+textarea{
+    border-radius: 10px;
+    padding: 10px;
+    border-color: lightgrey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0,0.2 )
+}
+
+@media (max-width: 680px){
+    span{
+        font-size: 70px;
+    }
+}
+
+@media (max-width: 475px){
+    span{
+        font-size: 40px;
+    }
+}
+@media (max-width: 320px){
+
+}
+
+
+
+
+
+
